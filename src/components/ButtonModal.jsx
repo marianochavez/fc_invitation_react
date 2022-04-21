@@ -103,7 +103,7 @@ export const ButtonModal = () => {
                                 {({ field, form }) => (
                                 <FormControl isInvalid={form.errors.name && form.touched.name}>
                                     <FormLabel htmlFor='name'>Nombre / Familia</FormLabel>
-                                    <Input {...field} id='name' isRequired autoFocus/>
+                                    <Input {...field} id='name' isRequired autoFocus autoComplete='off'/>
                                     <FormErrorMessage>{form.errors.name}</FormErrorMessage>
                                     <FormLabel htmlFor='amount' marginTop={2}>Cantidad de personas</FormLabel>
 

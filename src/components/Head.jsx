@@ -1,6 +1,6 @@
 import { Box, Heading, Spacer } from '@chakra-ui/react'
 import React from 'react'
-import { GiChewedSkull, GiDrumKit, GiGuitar, GiMicrophone, GiPianoKeys } from 'react-icons/gi'
+import { GiDrumKit, GiGuitar, GiMicrophone, GiPianoKeys, GiWineBottle } from 'react-icons/gi'
 
 export const Head = () => {
   return (
@@ -25,7 +25,7 @@ export const Head = () => {
                     <GiDrumKit />
                 </Box>
                 <Box marginLeft={{ base: 1, md: 3, lg: 3 }}>
-                    <GiChewedSkull />
+                    <GiWineBottle />
                 </Box>
             </Box>
         </Box>
