@@ -38,8 +38,13 @@ export const ButtonModal = () => {
   }, [assist])
 
   useEffect(() => {
-    isOpen ? play() : stop()
+    if (!isOpen) stop()
   }, [isOpen])
+
+  const handleClick = () => {
+    onOpen()
+    play()
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -78,7 +83,7 @@ export const ButtonModal = () => {
   return (
       <>
         <Button
-          onClick={onOpen} size='lg'
+          onClick={handleClick} size='lg'
           colorScheme={`${assist ? 'green' : 'yellow'}`}
           rightIcon={<BsFillHandThumbsUpFill/>}
         >
