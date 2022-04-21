@@ -19,11 +19,14 @@ import {
 import { BsFillHandThumbsUpFill } from 'react-icons/bs'
 import { Field, Form, Formik } from 'formik'
 import { addFamily } from '../helpers/firebase-config'
+import song from '../assets/song.mp3'
+import useSound from 'use-sound'
 
 export const ButtonModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [isLoading, setIsLoading] = useState(false)
   const [assist, setAssist] = useState(false)
+  const [play, { stop }] = useSound(song, { interrupt: true })
 
   useEffect(() => {
     const assistFromLocalStorage = localStorage.getItem('assist')
@@ -33,6 +36,10 @@ export const ButtonModal = () => {
   useEffect(() => {
     localStorage.setItem('assist', assist)
   }, [assist])
+
+  useEffect(() => {
+    isOpen ? play() : stop()
+  }, [isOpen])
 
   const handleSubmit = async (e) => {
     e.preventDefault()

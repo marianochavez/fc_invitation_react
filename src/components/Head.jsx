@@ -11,20 +11,20 @@ export const Head = () => {
                 </Heading>
             </Box>
             <Spacer />
-            <Box fontSize='30px' alignSelf='end' display='flex' flexDir='row'>
+            <Box fontSize={{ base: '25px', md: '30px', lg: '30px' }} alignSelf='end' display='flex' flexDir='row'>
                 <Box>
                     <GiMicrophone />
                 </Box>
-                <Box marginLeft={3}>
+                <Box marginLeft={{ base: 1, md: 3, lg: 3 }}>
                     <GiGuitar />
                 </Box>
-                <Box marginLeft={3}>
+                <Box marginLeft={{ base: 1, md: 3, lg: 3 }}>
                     <GiPianoKeys />
                 </Box>
-                <Box marginLeft={3}>
+                <Box marginLeft={{ base: 1, md: 3, lg: 3 }}>
                     <GiDrumKit />
                 </Box>
-                <Box marginLeft={3}>
+                <Box marginLeft={{ base: 1, md: 3, lg: 3 }}>
                     <GiChewedSkull />
                 </Box>
             </Box>
