@@ -1,8 +1,6 @@
 import React from 'react'
 import { Box, Container } from '@chakra-ui/react'
-import { Content } from './components/Content'
-import { DividerContent } from './components/DividerContent'
-import { Head } from './components/Head'
+import { Head, DividerContent, Content } from './components'
 
 function App () {
   return (

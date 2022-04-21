@@ -84,10 +84,10 @@ export const ButtonModal = () => {
       <>
         <Button
           onClick={handleClick} size='lg'
-          colorScheme={`${assist ? 'green' : 'yellow'}`}
+          colorScheme={`${assist === true ? 'green' : 'yellow'}`}
           rightIcon={<BsFillHandThumbsUpFill/>}
         >
-          {assist ? 'Ya asisto' : 'Asistir'}
+          {assist === true ? 'Ya asisto' : 'Asistir'}
         </Button>
 
         <Modal isOpen={isOpen} onClose={onClose}>

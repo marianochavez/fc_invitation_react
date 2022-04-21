@@ -1,6 +1,6 @@
-import { Box, Heading, Spacer, Text } from '@chakra-ui/react'
+import { Box, Heading, Link, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
-import { BsFillCalendarDateFill } from 'react-icons/bs'
+import { BsFillCalendarCheckFill } from 'react-icons/bs'
 import { ImLocation } from 'react-icons/im'
 import { BiTime } from 'react-icons/bi'
 import { ButtonModal } from './ButtonModal'
@@ -8,15 +8,26 @@ import { ButtonModal } from './ButtonModal'
 export const Content = () => {
   return (
     <Box display='flex' flexDir={{ base: 'column', lg: 'row' }} >
-        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em'>
-            <Heading fontFamily='body' fontSize='4em'>60th Birthday</Heading>
-            <Text paddingTop={7} paddingBottom={2} display='flex'><BsFillCalendarDateFill/>&nbsp;&nbsp;14 - 05 /2022</Text>
-            <Text paddingBottom={2} display='flex'><BiTime/>&nbsp;&nbsp;12:00</Text>
-            <Text paddingBottom={7} display='flex'><ImLocation/>&nbsp;&nbsp;Potrerillos, Lujan de Cuyo</Text>
+        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' className='animate__animated animate__slideInLeft animate__slow'>
+            <Heading fontFamily='body' fontSize='4em'>
+                60th Birthday
+            </Heading>
+            <Text paddingTop={7} paddingBottom={2} display='flex'>
+                <BsFillCalendarCheckFill/>
+                &nbsp;&nbsp;14 - Mayo / 2022
+            </Text>
+            <Text paddingBottom={2} display='flex'>
+                <BiTime/>
+                &nbsp;&nbsp;12:00
+            </Text>
+            <Text paddingBottom={7} display='flex' >
+                <ImLocation/> &nbsp;&nbsp;
+                <Link href='https://goo.gl/maps/DcdUWxW3pRqzkXFeA' isExternal>Potrerillos, Lujan de Cuyo</Link>
+            </Text>
             <ButtonModal/>
         </Box>
         <Spacer/>
-        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' paddingBottom='2em'>
+        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' paddingBottom='2em' className='animate__animated animate__slideInRight animate__slow'>
             <Text >
                 We&apos;ve known each other for so long
                 Your heart&apos;s been aching but you&apos;re too shy to say it

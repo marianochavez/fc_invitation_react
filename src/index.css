@@ -3,4 +3,17 @@ body {
     height: auto;
     background-color: rgb(22,22,22) !important;
     color: rgb(200, 201, 185) !important;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #c8c9b9;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #6e6e6a;
 }
