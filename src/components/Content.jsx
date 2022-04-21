@@ -5,11 +5,13 @@ import { ImLocation } from 'react-icons/im'
 import { BiTime } from 'react-icons/bi'
 import { ButtonModal } from './ButtonModal'
 
+// className='animate__animated animate__slideInLeft animate__slow'
+// className='animate__animated animate__slideInRight animate__slow'
 export const Content = () => {
   return (
     <Box display='flex' flexDir={{ base: 'column', lg: 'row' }} >
         <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' className='animate__animated animate__slideInLeft animate__slow'>
-            <Heading fontFamily='body' fontSize='4em'>
+            <Heading fontFamily='body' fontSize='4em' >
                 60th Birthday
             </Heading>
             <Text paddingTop={7} paddingBottom={2} display='flex'>
@@ -20,14 +22,14 @@ export const Content = () => {
                 <BiTime/>
                 &nbsp;&nbsp;12:00
             </Text>
-            <Text paddingBottom={7} display='flex' >
+            <Text paddingBottom={7} display='flex'>
                 <ImLocation/> &nbsp;&nbsp;
                 <Link href='https://goo.gl/maps/DcdUWxW3pRqzkXFeA' isExternal>Potrerillos, Lujan de Cuyo</Link>
             </Text>
             <ButtonModal/>
         </Box>
         <Spacer/>
-        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' paddingBottom='2em' className='animate__animated animate__slideInRight animate__slow'>
+        <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' paddingBottom='2em' className='animate__animated animate__fadeIn animate__slow'>
             <Text >
                 We&apos;ve known each other for so long
                 Your heart&apos;s been aching but you&apos;re too shy to say it

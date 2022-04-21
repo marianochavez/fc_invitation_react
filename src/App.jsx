@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container } from '@chakra-ui/react'
-import { Head, DividerContent, Content } from './components'
+import { Head, DividerContent, Content, Footer } from './components'
 
 function App () {
   return (
@@ -9,6 +9,7 @@ function App () {
         <Head/>
         <DividerContent/>
         <Content/>
+        <Footer/>
       </Container>
     </Box>
   )

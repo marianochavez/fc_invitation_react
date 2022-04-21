@@ -6,13 +6,13 @@ export const Head = () => {
   return (
         <Box w='100%' display='flex' flexDir='row' paddingTop='5'>
             <Box fontSize='3xl' fontWeight='semibold'>
-                <Heading marginBottom='-3.5' fontSize={{ base: '4xl', lg: '5xl' }} className='animate__animated animate__slideInLeft animate__slow'>
+                <Heading marginBottom='-3.5' fontSize={{ base: '4xl', lg: '5xl' }} className='animate__animated animate__fadeIn animate__slow'>
                     PichiChavez
                 </Heading>
             </Box>
             <Spacer />
             <Box fontSize={{ base: '25px', md: '30px', lg: '30px' }} alignSelf='end'
-                display='flex' flexDir='row' className='animate__animated animate__slideInRight animate__slow'
+                display='flex' flexDir='row' className='animate__animated animate__fadeIn animate__slow'
             >
                 <Box>
                     <GiMicrophone />
