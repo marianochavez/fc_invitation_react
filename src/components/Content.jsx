@@ -31,10 +31,8 @@ export const Content = () => {
         <Spacer/>
         <Box flex={{ base: 12, lg: 6 }} maxW={{ base: '100%', lg: '47%' }} paddingTop='2em' paddingBottom='2em' className='animate__animated animate__fadeIn animate__slow'>
             <Text >
-                We&apos;ve known each other for so long
-                Your heart&apos;s been aching but you&apos;re too shy to say it
-                Inside we both know what&apos;s been going on
-                We know the game and we&apos;re gonna play it
+                Sesenta pirulos solo se cumplen una vez, por eso
+                vení a festejar con amigos y familia. Show en vivo a cargo de Bizarock y Amnesia. Te espero!
             </Text>
             <Box paddingTop='2em' h='auto'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.675201260052!2d-69.26343348508223!3d-32.95958367987271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dece0da2428c3%3A0xd212023e0eb0aab9!2sLa%20Casa%20Del%20Tata!5e0!3m2!1ses-419!2sar!4v1650477978637!5m2!1ses-419!2sar"
