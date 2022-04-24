@@ -163,12 +163,7 @@ export const ButtonModal = () => {
                     )}
                   </Field>
                   <Box display='flex' alignItems='end' mt={4} mb={4} flexDir='row-reverse'>
-                    {assist.id.length !== 0 &&
-                      <Button colorScheme='whiteAlpha' type='submit' isLoading={isLoading}>Editar</Button>
-                    }
-                    {assist.id.length === 0 &&
-                      <Button colorScheme='whatsapp' variant='outline' type='submit' isLoading={isLoading}>Enviar</Button>
-                    }
+                    <Button colorScheme='whiteAlpha' type='submit' isLoading={isLoading}>{`${assist.id.length > 0 ? 'Editar' : 'Enviar'}`}</Button>
                     <Button onClick={onClose} colorScheme='red' mr={2} variant='outline'>Cancelar</Button>
                   </Box>
                 </Form>
@@ -181,7 +176,7 @@ export const ButtonModal = () => {
       <AlertDialog isOpen={isOpenAlert} onClose={onCloseAlert} isCentered >
         <AlertDialogOverlay>
           <AlertDialogContent backgroundColor='rgb(22,22,22)' color='rgb(200, 201, 185)'>
-            <AlertDialogHeader fontWeight='bold' color='green.300' fontSize='x-large'>
+            <AlertDialogHeader fontWeight='bold' color='green.500' fontSize='x-large'>
               Confirmación exitosa!
             </AlertDialogHeader>
 
