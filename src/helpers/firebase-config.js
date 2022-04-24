@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { collection, getDocs, getFirestore, addDoc, query, where } from 'firebase/firestore'
+import { doc, collection, getDocs, getFirestore, addDoc, query, where, updateDoc } from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyAMFSxmRey3dXmOGwbr4_Eh-t2VJMMXbbs',
@@ -43,4 +43,13 @@ export async function addFamily (family, quantity) {
     quantity
   })
   return familyDoc
+}
+
+export async function updateFamily (id, family, quantity) {
+  const famiyRef = doc(db, 'families', id)
+  const updated = await updateDoc(famiyRef, {
+    name: family,
+    quantity
+  })
+  return updated
 }

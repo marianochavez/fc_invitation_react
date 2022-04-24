@@ -5,8 +5,6 @@ import { ImLocation } from 'react-icons/im'
 import { BiTime } from 'react-icons/bi'
 import { ButtonModal } from './ButtonModal'
 
-// className='animate__animated animate__slideInLeft animate__slow'
-// className='animate__animated animate__slideInRight animate__slow'
 export const Content = () => {
   return (
     <Box display='flex' flexDir={{ base: 'column', lg: 'row' }} >
@@ -44,7 +42,6 @@ export const Content = () => {
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
             </Box>
-
         </Box>
     </Box>
   )
